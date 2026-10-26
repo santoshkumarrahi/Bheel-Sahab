@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <rect width="1200" height="750" fill="#030712" />
+  <g transform="translate(100, 80)">
+    <rect width="1000" height="590" rx="16" fill="#111827" stroke="#1f2937" stroke-width="2" />
+    <rect width="1000" height="50" rx="16" fill="#1f2937" />
+    <circle cx="25" cy="25" r="5" fill="#ef4444" />
+    <circle cx="45" cy="25" r="5" fill="#f59e0b" />
+    <circle cx="65" cy="25" r="5" fill="#10b981" />
+    <text x="500" y="32" fill="#9ca3af" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">HORIZON // MULTI-CLUSTER KUBERNETES MONITOR</text>
+
+    <!-- UI Nodes Grid -->
+    <g transform="translate(40, 80)">
+      <rect width="280" height="200" rx="12" fill="#0f172a" stroke="#2563eb" stroke-width="1.5" />
+      <text x="20" y="35" fill="#60a5fa" font-family="sans-serif" font-size="14" font-weight="bold">Cluster US-EAST-1</text>
+      <text x="20" y="60" fill="#9ca3af" font-family="sans-serif" font-size="12">128 Nodes · 99.98% Health</text>
+      <circle cx="230" cy="40" r="10" fill="#10b981" />
+      <path d="M 20 160 L 60 140 L 100 150 L 140 120 L 180 130 L 220 100 L 260 110" fill="none" stroke="#60a5fa" stroke-width="2.5" />
+    </g>
+
+    <g transform="translate(360, 80)">
+      <rect width="280" height="200" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+      <text x="20" y="35" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Cluster EU-CENTRAL-1</text>
+      <text x="20" y="60" fill="#9ca3af" font-family="sans-serif" font-size="12">96 Nodes · 100% Health</text>
+      <circle cx="230" cy="40" r="10" fill="#10b981" />
+      <path d="M 20 150 L 70 130 L 120 140 L 170 110 L 220 120 L 260 90" fill="none" stroke="#10b981" stroke-width="2.5" />
+    </g>
+
+    <g transform="translate(680, 80)">
+      <rect width="280" height="200" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+      <text x="20" y="35" fill="#f8fafc" font-family="sans-serif" font-size="14" font-weight="bold">Cluster AP-SOUTH-1</text>
+      <text x="20" y="60" fill="#9ca3af" font-family="sans-serif" font-size="12">64 Nodes · 100% Health</text>
+      <circle cx="230" cy="40" r="10" fill="#10b981" />
+      <path d="M 20 140 L 80 160 L 140 130 L 200 125 L 260 105" fill="none" stroke="#f59e0b" stroke-width="2.5" />
+    </g>
+
+    <!-- Terminal Pane below -->
+    <g transform="translate(40, 310)">
+      <rect width="920" height="240" rx="12" fill="#030712" stroke="#1f2937" />
+      <text x="24" y="35" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="13">$ horizon status --watch --all-namespaces</text>
+      <text x="24" y="70" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">✔ [READY] Ingress controller synced (0.02s)</text>
+      <text x="24" y="95" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">✔ [READY] Distributed cache mesh initialized across 288 instances</text>
+      <text x="24" y="120" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">i [INFO] Zero packet loss recorded over past 720 operational hours</text>
+      <text x="24" y="145" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">i [STREAM] Active client telemetry: 884k concurrent events processed</text>
+    </g>
+  </g>
+</svg>

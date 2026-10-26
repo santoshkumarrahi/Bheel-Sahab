@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="velox_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180404" />
+      <stop offset="50%" stop-color="#3b0707" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="neon_red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#velox_bg)" />
+
+  <g transform="translate(150, 80)">
+    <!-- Motion Poster Art -->
+    <rect width="900" height="590" rx="16" fill="#0f0303" stroke="#7f1d1d" stroke-width="2" />
+    
+    <g transform="translate(60, 60)">
+      <text x="0" y="80" fill="url(#neon_red)" font-family="'Outfit', sans-serif" font-weight="900" font-size="84" letter-spacing="-2">VELOX</text>
+      <text x="0" y="150" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="800" font-size="52" letter-spacing="-1">KINETIC SERIES</text>
+      <text x="0" y="200" fill="#fca5a5" font-family="sans-serif" font-size="16">Global High-Performance Athletic Footwear Motion Campaign</text>
+
+      <!-- Diagonal Speed Lines -->
+      <path d="M 450 0 L 750 350" stroke="url(#neon_red)" stroke-width="6" opacity="0.8" />
+      <path d="M 490 0 L 790 350" stroke="#f97316" stroke-width="3" opacity="0.5" />
+      <path d="M 530 0 L 830 350" stroke="#ef4444" stroke-width="1.5" opacity="0.3" />
+
+      <g transform="translate(0, 260)">
+        <rect width="180" height="90" rx="10" fill="#2d0a0a" stroke="#7f1d1d" />
+        <text x="20" y="40" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="bold">3.2M</text>
+        <text x="20" y="70" fill="#e2e8f0" font-family="sans-serif" font-size="12">Social Impressions</text>
+      </g>
+
+      <g transform="translate(200, 260)">
+        <rect width="180" height="90" rx="10" fill="#2d0a0a" stroke="#7f1d1d" />
+        <text x="20" y="40" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="bold">4.8%</text>
+        <text x="20" y="70" fill="#e2e8f0" font-family="sans-serif" font-size="12">Organic Click Rate</text>
+      </g>
+
+      <g transform="translate(400, 260)">
+        <rect width="220" height="90" rx="10" fill="#2d0a0a" stroke="#7f1d1d" />
+        <text x="20" y="40" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="bold">12 Reels</text>
+        <text x="20" y="70" fill="#e2e8f0" font-family="sans-serif" font-size="12">Custom Motion Assets</text>
+      </g>
+    </g>
+  </g>
+</svg>

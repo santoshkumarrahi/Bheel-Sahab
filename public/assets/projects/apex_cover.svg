@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="apex_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#0d1b2a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#apex_bg)" />
+  
+  <g transform="translate(100, 80)">
+    <!-- Header of Dashboard -->
+    <rect width="1000" height="590" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="2" />
+    
+    <!-- Top toolbar -->
+    <rect width="1000" height="60" rx="16" fill="#1e293b" />
+    <rect y="40" width="1000" height="20" fill="#1e293b" />
+    <text x="30" y="38" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="bold">APEX::CORE // RELATIONAL API GATEWAY</text>
+    <text x="800" y="38" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="14">LATENCY: 14ms · 99.99% UP</text>
+    
+    <!-- Left telemetry -->
+    <g transform="translate(30, 90)">
+      <rect width="280" height="180" rx="12" fill="#111c30" stroke="#1e3a5f" />
+      <text x="20" y="35" fill="#94a3b8" font-family="sans-serif" font-size="13">ACTIVE API SESSIONS</text>
+      <text x="20" y="80" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="bold">42,850</text>
+      <path d="M 20 140 L 70 120 L 120 135 L 180 100 L 230 115 L 260 90" fill="none" stroke="#38bdf8" stroke-width="3" />
+    </g>
+
+    <g transform="translate(330, 90)">
+      <rect width="300" height="180" rx="12" fill="#111c30" stroke="#1e3a5f" />
+      <text x="20" y="35" fill="#94a3b8" font-family="sans-serif" font-size="13">DATABASE CONCURRENCY</text>
+      <text x="20" y="80" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="34" font-weight="bold">15,400 <tspan font-size="16">req/s</tspan></text>
+      <path d="M 20 140 Q 80 110 140 125 T 260 85" fill="none" stroke="#10b981" stroke-width="3" />
+    </g>
+
+    <g transform="translate(650, 90)">
+      <rect width="320" height="180" rx="12" fill="#111c30" stroke="#1e3a5f" />
+      <text x="20" y="35" fill="#94a3b8" font-family="sans-serif" font-size="13">SECURITY AUDIT ENGINE</text>
+      <text x="20" y="75" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="20">JWT + RBAC VERIFIED</text>
+      <text x="20" y="110" fill="#94a3b8" font-family="sans-serif" font-size="12">Sha-256 Signature Validated</text>
+      <text x="20" y="140" fill="#38bdf8" font-family="sans-serif" font-size="12">PostgreSQL Connection Pool: 24 active</text>
+    </g>
+
+    <!-- Query Table -->
+    <g transform="translate(30, 300)">
+      <rect width="940" height="260" rx="12" fill="#111c30" stroke="#1e3a5f" />
+      <text x="24" y="35" fill="#e2e8f0" font-family="sans-serif" font-size="15" font-weight="600">Real-Time Transaction Ingestion Pipeline</text>
+      
+      <!-- Table Headers -->
+      <g transform="translate(24, 60)" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8">
+        <text x="0" y="0">ENDPOINT</text>
+        <text x="320" y="0">METHOD</text>
+        <text x="440" y="0">STATUS</text>
+        <text x="560" y="0">LATENCY</text>
+        <text x="700" y="0">PAYLOAD</text>
+      </g>
+      <line x1="24" y1="75" x2="916" y2="75" stroke="#1e293b" />
+
+      <!-- Row 1 -->
+      <g transform="translate(24, 105)" font-family="'JetBrains Mono', monospace" font-size="13">
+        <text x="0" y="0" fill="#f8fafc">/api/v2/transactions/settle</text>
+        <text x="320" y="0" fill="#38bdf8">POST</text>
+        <text x="440" y="0" fill="#10b981">200 OK</text>
+        <text x="560" y="0" fill="#cbd5e1">12ms</text>
+        <text x="700" y="0" fill="#94a3b8">encrypted_payload</text>
+      </g>
+      
+      <!-- Row 2 -->
+      <g transform="translate(24, 150)" font-family="'JetBrains Mono', monospace" font-size="13">
+        <text x="0" y="0" fill="#f8fafc">/api/v2/ledger/reconcile</text>
+        <text x="320" y="0" fill="#f59e0b">PATCH</text>
+        <text x="440" y="0" fill="#10b981">200 OK</text>
+        <text x="560" y="0" fill="#cbd5e1">18ms</text>
+        <text x="700" y="0" fill="#94a3b8">sync_hash_valid</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(24, 195)" font-family="'JetBrains Mono', monospace" font-size="13">
+        <text x="0" y="0" fill="#f8fafc">/api/v2/auth/verify-token</text>
+        <text x="320" y="0" fill="#38bdf8">GET</text>
+        <text x="440" y="0" fill="#10b981">200 OK</text>
+        <text x="560" y="0" fill="#cbd5e1">4ms</text>
+        <text x="700" y="0" fill="#94a3b8">role_admin_granted</text>
+      </g>
+    </g>
+  </g>
+</svg>
